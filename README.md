@@ -1,5 +1,9 @@
 # @apertis/agent
 
+[![npm](https://img.shields.io/npm/v/@apertis/agent.svg)](https://www.npmjs.com/package/@apertis/agent)
+[![CI](https://github.com/apertis-ai/apertis-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/apertis-ai/apertis-agent/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/@apertis/agent.svg)](./LICENSE)
+
 Agent runtime for [Apertis](https://apertis.ai?utm_source=apertis-agent&utm_medium=npm&utm_campaign=ecosystem) — multi-step tool loops, stop conditions, streaming, human-in-the-loop approval, and **measured** cost control. Drop-in shape for `@openrouter/agent`, over the Apertis OpenAI-compatible API.
 
 ## Why
