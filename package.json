@@ -1,0 +1,61 @@
+{
+  "name": "@apertis/agent",
+  "version": "0.1.0",
+  "description": "Agent runtime for Apertis — multi-step tool loops, stop conditions, streaming, approval, and real measured cost. Drop-in shape for @openrouter/agent.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apertis-ai/apertis-agent"
+  },
+  "homepage": "https://apertis.ai?utm_source=apertis-agent&utm_medium=npm&utm_campaign=ecosystem",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "keywords": [
+    "apertis",
+    "agent",
+    "ai",
+    "llm",
+    "tool-calling",
+    "agentic",
+    "openai-compatible",
+    "openrouter"
+  ]
+}
